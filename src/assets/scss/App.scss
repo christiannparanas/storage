@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @font-face {
    font-family: 'Quicksand';
    src: url('/Quicksand-Light.woff2') format('woff2'),
        url('/Quicksand-Light.woff') format('woff');
-   font-weight: 300;
+   font-weight: 800;
    font-style: normal;
  }
 
@@ -123,6 +124,65 @@ nav {
            background-color: #5D3AC5;
         }
       }
+    }
+  }
+}
+
+// home 
+.home {
+   padding: 20px;
+   height: 100vh;
+
+   .me {
+      margin-top: 100px;
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+
+      img {
+         width: 150px;
+         border-radius: 50%;
+         border: 1px solid #e3e3e3;
+      }
+   }
+
+  .msg {
+    color: #1c2137;
+    padding: 20px 0;
+
+    .s1, .s2, .s3 {
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      margin-bottom: 12px;
+    }
+
+    .s1 {
+      font-size: 17px;
+    }
+
+    .s2 {
+      font-size: 30px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .s3 {
+      font-size: 17px;
+    }
+  }
+
+  .works {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #432a8f;
+    padding: 15px;
+    border-radius: 30px;
+
+    .link {
+      text-decoration: none;
+      color: #fffaf5;
+      font-size: 18px;
     }
   }
 }
