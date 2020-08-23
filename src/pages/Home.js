@@ -4,7 +4,7 @@ import me from '../assets/img/me.png'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
-   const [info, setInfo] = useState("I'm a full stack developer based in Tacloban City, Philippines who loves to build websites and mobile applications.")
+   const [info] = useState("I'm a full stack developer based in Tacloban City, Philippines who loves to build websites and mobile applications.")
    const containerVariants = {
       hidden: {
          opacity: 0,
