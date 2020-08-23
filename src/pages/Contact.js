@@ -21,18 +21,17 @@ export default function Contact() {
    return (
       <motion.div className="contact" variants={{containerVariants}} initial="hidden" animate="visible" exit="exit">
          <div className="contact-dis">Have a project in mind or just want to say hi? Feel free to send me a message!</div>
-         <form action="">
-            <label className="lbl1" htmlFor="name">Name</label>
-            <input id="name" type="text" name="name" />
-
-            <label className="lbl2" htmlFor="email">Email</label>
-            <input type="email" name="email" />
-
-            <label className="lbl3" htmlFor="msg">Message</label>
-            <textarea name="msg" cols="20" rows="5"></textarea>
-
-            <div className="send">Send</div>
-         </form>
+         <div className="email"><a href="mailto:christiannparanas@gmail.com">Send a mail</a></div>
+         <div className="socialmedia">
+            <div className="dis">other socia media accounts:</div>
+            <div className="social">
+               <i className="fab fa-facebook-f"></i>
+               <i className="fab fa-twitter"></i>
+               <i className="fab fa-github"></i>
+               <i className="fab fa-linkedin-in"></i>
+               <i className="fab fa-stack-overflow"></i>
+            </div>
+         </div>
       </motion.div>
    )
 }
