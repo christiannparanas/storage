@@ -31,7 +31,7 @@ export default function Nav() {
       <>
          <nav style={{ backgroundColor: navColor }} id="nav">
             <Logo />
-            <motion.div initial={{ y: -20 }} animate={{ y: 0 }} onClick={openMenu} className={menu} >
+            <motion.div initial={{ y: -200 }} animate={{ y: 0 }} onClick={openMenu} className={menu} >
                <div className="menu-btn__burger"></div>
             </motion.div>
          </nav>

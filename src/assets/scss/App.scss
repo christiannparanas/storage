@@ -34,7 +34,6 @@ nav {
      position: absolute;
      top: -80px;
      left: -60px;
-     transition: all 0.3s ease-in-out;
   }
 
   .menu-btn {
@@ -50,8 +49,6 @@ nav {
     align-items: center;
 
     cursor: pointer;
-    /* border: 5px solid #fff; */
-    transition: all 0.3s ease-in-out;
   }
 
   .menu-btn__burger,
