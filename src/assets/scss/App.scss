@@ -1,11 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+@font-face {
+   font-family: 'Quicksand';
+   src: url('/Quicksand-Light.woff2') format('woff2'),
+       url('/Quicksand-Light.woff') format('woff');
+   font-weight: 300;
+   font-style: normal;
+ }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand";
   scroll-behavior: smooth;
 }
 
@@ -26,8 +32,9 @@ nav {
   .logo {
      width: 150px;
      position: absolute;
-     top: -70px;
+     top: -80px;
      left: -60px;
+     transition: all 0.3s ease-in-out;
   }
 
   .menu-btn {
@@ -44,7 +51,7 @@ nav {
 
     cursor: pointer;
     /* border: 5px solid #fff; */
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .menu-btn__burger,
@@ -109,10 +116,10 @@ nav {
         padding: 8px 15px;
         margin-bottom: 5px;
         text-decoration: none;
-        color: #000;
+        color: #432a8f;
         border-radius: 20px;
         transition: background-color .3s ease;
-        font-family: 'Balsamiq Sans', cursive;
+        font-weight: 800;
 
         &:hover {
            color: #fffaf5;

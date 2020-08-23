@@ -1,7 +1,8 @@
 import React from "react";
+import { motion } from 'framer-motion';
 
 const Logo = (props) => (
-  <svg className="logo" height={200} {...props}>
+  <motion.svg initial={{ y: -20 }}  animate={{ y: 10 }} className="logo" height={200} {...props}>
     <g>
       <title>{"Layer 1"}</title>
       <ellipse
@@ -35,7 +36,7 @@ const Logo = (props) => (
         rx={3}
       />
     </g>
-  </svg>
+  </motion.svg>
 );
 
 export default Logo;

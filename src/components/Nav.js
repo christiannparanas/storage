@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
+import { motion } from 'framer-motion';
 
 export default function Nav() {
    const [menu, setMenu] = useState("menu-btn")
@@ -30,9 +31,9 @@ export default function Nav() {
       <>
          <nav style={{ backgroundColor: navColor }} id="nav">
             <Logo />
-            <div onClick={openMenu} className={menu} >
+            <motion.div initial={{ y: -20 }} animate={{ y: 0 }} onClick={openMenu} className={menu} >
                <div className="menu-btn__burger"></div>
-            </div>
+            </motion.div>
          </nav>
 
          <div style={{ top: menuItems }} className="nav-menu">
