@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @font-face {
    font-family: 'Quicksand';
@@ -14,6 +15,7 @@
   box-sizing: border-box;
   font-family: "Quicksand";
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -105,7 +107,7 @@ nav {
 
   ul {
     li {
-      font-size: 25px;
+      font-size: 30px;
       list-style: none;
       margin: 20px 0;
 
@@ -134,15 +136,16 @@ nav {
    height: 100vh;
 
    .me {
-      margin-top: 100px;
-      margin-bottom: 20px;
+      margin-top: 80px;
+      margin-bottom: 10px;
       width: 100%;
       text-align: center;
 
       img {
          width: 150px;
          border-radius: 50%;
-         border: 1px solid #e3e3e3;
+         border: 5px solid #432a8f;
+         background-color: #432a8f;
       }
    }
 
@@ -152,7 +155,7 @@ nav {
 
     .s1, .s2, .s3 {
       display: block;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       margin-bottom: 12px;
     }
 
@@ -161,9 +164,8 @@ nav {
     }
 
     .s2 {
-      font-size: 30px;
+      font-size: 35px;
       font-weight: 900;
-      margin-bottom: 20px;
     }
 
     .s3 {
@@ -171,18 +173,54 @@ nav {
     }
   }
 
-  .works {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #432a8f;
-    padding: 15px;
-    border-radius: 30px;
+  .options {
+    margin-top: 20px;
 
-    .link {
-      text-decoration: none;
-      color: #fffaf5;
+    .see, .cv {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 18px;
+      margin-bottom: 12px;
+      border-radius: 25px;
+      font-weight: 800;
       font-size: 18px;
+      cursor: pointer;
+      transition: background-color .2s ease-in-out;
     }
+
+    .see {
+      background-color: #432a8f;
+      color: #fff;
+
+      &:hover {
+        color: #1c2137;
+        padding: 13px;
+        border: 5px solid #432a8f;
+        background-color: #fff;
+      }
+    }
+
+    .cv {
+      border: 5px solid #432a8f;
+      position: relative;
+      padding: 13px;
+
+      &:hover {
+        color: #201f60;
+        padding: 13px;
+        border: 5px solid #201f60;
+        background-color: #fffaf5;
+      }
+
+      img {
+        position: absolute;
+        top: 8px;
+        right: 45px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  
   }
 }

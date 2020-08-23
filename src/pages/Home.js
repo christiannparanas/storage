@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import me from '../assets/img/me.png'
+import dl from '../assets/img/download.svg'
 import { Link } from 'react-router-dom'
 
 export default function Home() {
@@ -29,9 +30,12 @@ export default function Home() {
             <span className="s2">Christian R. Paranas</span>
             <span className="s3">{info}</span>
          </div>
-         <div className="works">
-            <Link to="/projects" className="link">See my works</Link>
+         <div className="options">
+            <div className="see">Projects</div>
+            <div className="cv">Curriculum Vitae <img src={dl} alt=""/></div>
          </div>
       </motion.div>
    )
 }
+
+// <Link to="/projects" className="link">See my works</Link>
