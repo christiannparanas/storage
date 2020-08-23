@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import me from '../assets/img/me.png'
 import dl from '../assets/img/download.svg'
-import { Link } from 'react-router-dom'
 
 export default function Home() {
    const [info] = useState("I'm a full stack developer based in Tacloban City, Philippines who loves to build websites and mobile applications.")
