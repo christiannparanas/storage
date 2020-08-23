@@ -31,17 +31,17 @@ export default function Nav() {
       <>
          <nav style={{ backgroundColor: navColor }} id="nav">
             <Logo />
-            <motion.div initial={{ y: -200 }} animate={{ y: 0 }} onClick={openMenu} className={menu} >
+            <motion.div whileHover={{ scale: 1.1 }} initial={{ y: -200 }} animate={{ y: 0 }} transition={{ type: "spring", stiffness: 120 }} onClick={openMenu} className={menu} >
                <div className="menu-btn__burger"></div>
             </motion.div>
          </nav>
 
          <div style={{ top: menuItems }} className="nav-menu">
             <ul>
-               <li onClick={closeNav}><Link to="/">Home</Link></li>
-               <li onClick={closeNav}><Link to="/about">About</Link></li>
-               <li onClick={closeNav}><Link to="/projects">Projects</Link></li>
-               <li onClick={closeNav}><Link to="/contact">Contact</Link></li>
+               <motion.li whileHover={{ scale: 1.2 }} onClick={closeNav}><Link to="/">Home</Link></motion.li>
+               <motion.li whileHover={{ scale: 1.2 }} onClick={closeNav}><Link to="/about">About</Link></motion.li>
+               <motion.li whileHover={{ scale: 1.2 }} onClick={closeNav}><Link to="/projects">Projects</Link></motion.li>
+               <motion.li whileHover={{ scale: 1.2 }} onClick={closeNav}><Link to="/contact">Contact</Link></motion.li>
             </ul>
          </div>
       </>
