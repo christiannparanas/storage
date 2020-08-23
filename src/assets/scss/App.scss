@@ -264,3 +264,63 @@ nav {
     }
   }
 }
+
+.contact {
+  padding: 130px 20px 20px;
+  text-align: center;
+
+  .contact-dis {
+    width: 78%;
+    margin: 0 auto;
+  }
+
+  form {
+    padding: 20px;
+    position: relative;
+
+    label, input {
+      display: block;
+    }
+
+    label {
+      position: absolute;
+      left: 55px;
+    }
+
+    .lbl1 {
+      top: 49px;
+    }
+
+    .lbl2 {
+      top: 112px;
+    }
+
+    .lbl3 {
+      top: 175px;
+    }
+
+    input, textarea {
+      resize: none;
+      padding: 15px;
+      width: 90%;
+      border-radius: 5px;
+      margin: 15px auto;
+      border: 1px solid #e3e3e3;
+      outline: 0;
+      background-color: #fff;
+    }
+
+    textarea {
+      margin-top: 0;
+    }
+
+    .send {
+      border-radius: 5px;
+      width: 90%;
+      margin: 0 auto;
+      color: #fff;
+      padding: 15px;
+      background-color: #432a8f;
+    }
+  }
+}
