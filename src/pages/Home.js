@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import me from '../assets/img/me.png'
-import dl from '../assets/img/download.svg'
 
 export default function Home() {
    const [info] = useState("I'm a full stack developer based in Tacloban City, Philippines who loves to build websites and mobile applications.")
@@ -31,7 +30,7 @@ export default function Home() {
          </div>
          <div className="options">
             <div className="see">Projects</div>
-            <div className="cv">Curriculum Vitae <img src={dl} alt=""/></div>
+            <div className="cv">Curriculum Vitae <i className='fas fa-file-download'></i></div>
          </div>
       </motion.div>
    )
