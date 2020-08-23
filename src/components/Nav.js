@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 export default function Nav() {
    const [menu, setMenu] = useState("menu-btn")
    const [menuItems, setMenuItems] =  useState('-100vh')
-   const [navColor, setNavColor] = useState('#1c2137')
+   const [navColor, setNavColor] = useState('#fffaf5')
 
    function openMenu() {
       if(menu === "menu-btn") {
@@ -13,13 +14,7 @@ export default function Nav() {
          setNavColor('transparent')
       }
       else {
-         setMenu('menu-btn')
-         setMenuItems('-100vh')
-         setTimeout(() => {
-            setNavColor('#1c2137')
-         }, 300)
-
-         
+         closeNav();
       }
    }
 
@@ -27,13 +22,14 @@ export default function Nav() {
       setMenu('menu-btn')
       setMenuItems('-100vh')
       setTimeout(() => {
-         setNavColor('#1c2137')
+         setNavColor('#fffaf5')
       }, 300)
    }
 
    return (
       <>
          <nav style={{ backgroundColor: navColor }} id="nav">
+            <Logo />
             <div onClick={openMenu} className={menu} >
                <div className="menu-btn__burger"></div>
             </div>
