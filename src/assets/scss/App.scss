@@ -373,16 +373,23 @@ nav {
       margin-bottom: 20px;
     }
 
-    .tools {
+    .tool-title {
+      font-size: 13px;
       margin-top: 20px;
+    }
+
+    .tools {
+      margin-top: 5px;
       display: grid;
       grid-column-gap: 5px;
       grid-auto-flow: column;
+      grid-auto-rows: auto;
       align-items: center;
       justify-items: center;
 
       .tool {
-        border-radius: 6px;
+        font-size: 15px;
+        border-radius: 15px;
         color: #fff;
         width: 100%;
         text-align: center;
