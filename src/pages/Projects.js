@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
+import { Helmet } from 'react-helmet'
+
 import folder from "../assets/img/folder.svg";
 import git from "../assets/img/git.svg";
 import external from "../assets/img/external-link.svg";
@@ -51,6 +53,11 @@ export default function Projects() {
 
   return (
     <div className="projects">
+      <Helmet htmlAttributes>
+            <html lang="en" />
+            <title>Christian Paranas | Projects</title>
+      </Helmet>
+
       <div className="pro">Projects I built</div>
 
       {works.map((work) => (

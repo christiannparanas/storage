@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { motion } from 'framer-motion'
 import me from '../assets/img/me.png'
 import web from '../assets/img/computer-mouse.svg'
@@ -9,6 +10,11 @@ export default function Home() {
 
    return (
       <motion.div className="home">
+         <Helmet htmlAttributes>
+            <html lang="en" />
+            <title>Christian Paranas | Web Developer</title>
+         </Helmet>
+
          <div className="me">
             <img src={me} alt="dre nadara"/>
          </div>
