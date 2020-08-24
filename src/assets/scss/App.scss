@@ -327,22 +327,42 @@ nav {
 }
 
 .projects {
-  padding: 100px 20px;
+  padding: 90px 20px;
+
+  .pro {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
   .project-container {
     padding: 20px;
     border-radius: 20px;
     background-color: #fff;
     -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.10);
-      -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.10);
-      box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.10);
+    margin-bottom: 15px;
 
     .icons {
       display: grid;
-      grid-template-columns: 1fr 40px 40px;
+      grid-template-columns: 1fr 50px 50px;
+      align-items: center;
+      justify-items: center;
+      
 
       .file, .git {
-        width: 20px;
+        width: 30px;
+      }
+
+      .file {
+        align-self: initial;
+        justify-self: left;
+      }
+
+      .exter {
+        margin-top: 3px;
       }
     }
 
@@ -351,6 +371,24 @@ nav {
       font-weight: bolder;
       margin-top: 20px;
       margin-bottom: 20px;
+    }
+
+    .tools {
+      margin-top: 20px;
+      display: grid;
+      grid-column-gap: 5px;
+      grid-auto-flow: column;
+      align-items: center;
+      justify-items: center;
+
+      .tool {
+        border-radius: 6px;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        background-color: #5D3AC5;
+      }
     }
   }
 }
