@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom'
 
 const Logo = (props) => (
+  <Link to="/">
   <motion.svg whileHover={{ scale: 1.1 }} initial={{ y: -200 }}  animate={{ y: 10 }} transition={{ type: "spring", stiffness: 120}} className="logo" height={200} {...props}>
     <g>
       <title>{"Layer 1"}</title>
@@ -37,6 +39,7 @@ const Logo = (props) => (
       />
     </g>
   </motion.svg>
+  </Link>
 );
 
 export default Logo;

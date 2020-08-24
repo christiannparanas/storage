@@ -6,22 +6,9 @@ import ui from '../assets/img/web-layout.svg'
 
 export default function Home() {
    const [info] = useState("I'm a full stack developer based in Tacloban City, Philippines who loves to build websites and mobile applications.")
-   const containerVariants = {
-      hidden: {
-         opacity: 0,
-      },
-      visible: {
-         opacity: 1,
-         transition: { delay: 1.5, duration: 1.5}
-      },
-      exit: {
-         x: '-100vw',
-         transition: { ease: 'easeInOut' }
-      }
-   }
 
    return (
-      <motion.div className="home" variants={{containerVariants}} initial="hidden" animate="visible" exit="exit">
+      <motion.div className="home">
          <div className="me">
             <img src={me} alt="dre nadara"/>
          </div>

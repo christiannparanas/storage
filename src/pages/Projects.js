@@ -1,28 +1,22 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import folder from '../assets/img/folder.svg'
+import git from '../assets/img/git.svg'
+import external from '../assets/img/external-link.svg'
 
 export default function Projects() {
-   const containerVariants = {
-      hidden: {
-         opacity: 0,
-      },
-      visible: {
-         opacity: 1,
-         transition: { delay: 1.5, duration: 1.5}
-      },
-      exit: {
-         x: '-100vw',
-         transition: { ease: 'easeInOut' }
-      }
-   }
 
    return (
-      <motion.div
-         variants={{containerVariants}}
-         initial="hidden"
-         animate="visible"
-         exit="exit">
-         Projects
-      </motion.div>
+      <div className="projects">
+         <div className="project-container">
+            <div className="icons">
+               <img src={folder} className="file" alt=""/>
+               <img src={git} className="git" alt=""/>
+               <img src={external} alt=""/>
+            </div>
+            <div className="title">Thea's Food Deliveries</div>
+            <div className="discription">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quasi consequuntur soluta similique modi excepturi?</div>
+            <div className="tools"></div>
+         </div>
+      </div>
    )
 }
