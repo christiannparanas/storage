@@ -1,0 +1,45 @@
+
+@media (min-width: 1024px) {
+   .home {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      padding-bottom: 20px;
+
+
+      .me {
+         text-align: none;
+         width: 100%;
+
+         img {
+            width: 160px;
+         }
+      }
+
+      .msg {
+         margin: 80px 20px 20px;
+      }
+
+      .can {
+         margin: 25px 20px 20px;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-column-gap: 15px;
+      }
+
+      .options {
+         margin-top: 40px;
+
+         .see, .cv {
+            padding: 15px;
+
+            &:hover {
+               padding: 10px;
+            }
+         }
+
+         .cv {
+            padding: 10px;
+         }
+      }
+   }
+}
