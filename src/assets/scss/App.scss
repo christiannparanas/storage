@@ -266,9 +266,6 @@ nav {
   }
 }
 
-// home section desktop view
-@import './desktop.scss';
-
 // contact section
 .contact {
   padding: 180px 20px 20px;
@@ -403,3 +400,6 @@ nav {
     }
   }
 }
+
+// desktop view
+@import './desktop.scss';
