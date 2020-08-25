@@ -43,3 +43,21 @@
       }
    }
 }
+
+// projects
+.projects {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+  
+   position: relative;
+   grid-column-gap: 15px;
+
+   .pro {
+      grid-column-start: 3;
+      position: absolute;
+   }
+
+   .project-container {
+      height: fit-content;
+   }
+}
