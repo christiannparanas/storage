@@ -6,7 +6,7 @@ import web from '../assets/img/computer-mouse.svg'
 import ui from '../assets/img/web-layout.svg'
 
 export default function Home() {
-   const [info] = useState("I'm a full stack developer based in Tacloban City, Philippines who loves to build websites and mobile applications.")
+   const [info] = useState("I'm a Student and a Freelance Web Developer currently in Tacloban City, Philippines.")
 
    return (
       <motion.div className="home">

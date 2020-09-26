@@ -4,7 +4,7 @@
 @font-face {
    font-family: 'Quicksand';
    src: url('/Quicksand-Light.woff2') format('woff2'),
-       url('/Quicksand-Light.woff') format('woff');
+        url('/Quicksand-Light.woff') format('woff');
    font-weight: 800;
    font-style: normal;
  }
@@ -400,6 +400,9 @@ nav {
     }
   }
 }
+
+// tablet view
+@import './tablet.scss';
 
 // desktop view
 @import './desktop.scss';

@@ -1,13 +1,8 @@
-
-@media (min-width: 1024px) {
+@media (min-width: 739px) {
    .home {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      padding-bottom: 20px;
-
 
       .me {
-         text-align: none;
+         text-align: center;
          width: 100%;
 
          img {
@@ -61,4 +56,3 @@
      }
   }
 }
-
