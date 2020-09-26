@@ -12,6 +12,7 @@ export default function Home() {
       <motion.div className="home">
          <Helmet htmlAttributes>
             <html lang="en" />
+            <meta property="og:image" content={me} />
             <title>Christian Paranas | Web Developer</title>
          </Helmet>
 

@@ -1,13 +1,12 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @font-face {
-   font-family: 'Quicksand';
-   src: url('/Quicksand-Light.woff2') format('woff2'),
-        url('/Quicksand-Light.woff') format('woff');
-   font-weight: 800;
-   font-style: normal;
- }
+  font-family: "Quicksand";
+  src: url("/Quicksand-Light.woff2") format("woff2"),
+    url("/Quicksand-Light.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -19,7 +18,7 @@
 }
 
 body {
-   background-color: #fffaf5;
+  background-color: #fffaf5;
 }
 
 nav {
@@ -33,10 +32,10 @@ nav {
   transition: all 0.3s ease;
 
   .logo {
-     width: 150px;
-     position: absolute;
-     top: -80px;
-     left: -60px;
+    width: 150px;
+    position: absolute;
+    top: -80px;
+    left: -60px;
   }
 
   .menu-btn {
@@ -61,7 +60,7 @@ nav {
     height: 4px;
 
     border-radius: 5px;
-    background-color: #5D3AC5;
+    background-color: #5d3ac5;
     box-shadow: 0 2px 5px var(--box-shadow-color);
 
     transition: all 0.5s ease-in-out;
@@ -119,44 +118,47 @@ nav {
         text-decoration: none;
         color: #432a8f;
         border-radius: 20px;
-        transition: background-color .3s ease;
+        transition: background-color 0.3s ease;
         font-weight: 800;
 
         &:hover {
-           color: #fffaf5;
-           background-color: #5D3AC5;
+          color: #fffaf5;
+          background-color: #5d3ac5;
         }
       }
     }
   }
 }
 
-// home 
+// home
 .home {
-   padding: 20px 20px 30px;
-   height: fit-content;
+  margin-top: 50px;
+  padding: 20px 20px 30px;
+  height: fit-content;
 
-   .me {
-      margin-top: 80px;
-      margin-bottom: 10px;
-      width: 100%;
-      text-align: center;
+  .me {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
 
-      img {
-         width: 150px;
-         border-radius: 50%;
-         border: 5px solid #432a8f;
-         background-color: #432a8f;
-      }
-   }
+    img {
+      width: 150px;
+      border-radius: 50%;
+      border: 5px solid #432a8f;
+      background-color: #432a8f;
+    }
+  }
 
   .msg {
     color: #1c2137;
     padding: 20px 0;
 
-    .s1, .s2, .s3 {
+    .s1,
+    .s2,
+    .s3 {
       display: block;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       margin-bottom: 12px;
     }
 
@@ -177,7 +179,8 @@ nav {
   .options {
     margin-top: 20px;
 
-    .see, .cv {
+    .see,
+    .cv {
       width: 80%;
       margin: 0 auto;
       text-align: center;
@@ -187,7 +190,7 @@ nav {
       font-weight: 800;
       font-size: 18px;
       cursor: pointer;
-      transition: background .3s ease-in-out;
+      transition: background 0.3s ease-in-out;
     }
 
     .see {
@@ -228,7 +231,8 @@ nav {
     margin-top: 80px;
     text-align: center;
 
-    .web, .ui {
+    .web,
+    .ui {
       background-color: #fff;
       border-radius: 15px;
       width: 100%;
@@ -238,9 +242,9 @@ nav {
       padding: 20px;
       margin-bottom: 15px;
 
-      -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.60);
-      -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.60);
-      box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.10);
+      -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+      -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
+      box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
 
       .title {
         margin-bottom: 15px;
@@ -285,9 +289,8 @@ nav {
     border-radius: 25px;
     margin-bottom: 220px;
     border: 5px solid #432a8f;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
-    
 
     a {
       text-decoration: none;
@@ -305,26 +308,22 @@ nav {
     }
   }
 
-
   .socialmedia {
-
-
     .social {
-
       i {
         cursor: pointer;
         margin: 5px;
         padding: 5px;
         font-size: 30px;
         color: #432a8f;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
           color: #1c2137;
         }
       }
     }
-  }  
+  }
 }
 
 .projects {
@@ -341,9 +340,9 @@ nav {
     padding: 20px;
     border-radius: 20px;
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.10);
-    -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.10);
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.10);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
 
     .icons {
@@ -351,9 +350,9 @@ nav {
       grid-template-columns: 1fr 50px 50px;
       align-items: center;
       justify-items: center;
-      
 
-      .file, .git {
+      .file,
+      .git {
         width: 30px;
       }
 
@@ -395,14 +394,14 @@ nav {
         width: 100%;
         text-align: center;
         padding: 5px;
-        background-color: #5D3AC5;
+        background-color: #5d3ac5;
       }
     }
   }
 }
 
 // tablet view
-@import './tablet.scss';
+@import "./tablet.scss";
 
 // desktop view
-@import './desktop.scss';
+@import "./desktop.scss";
