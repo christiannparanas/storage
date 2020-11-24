@@ -9,13 +9,6 @@ import external from "../assets/img/external-link.svg";
 export default function Projects() {
   const works = [
     {
-      name: "ChuruchatRoom",
-      disc: "Realtime Chatroom",
-      tools: ["React", "Firebase", "Axios"],
-      repo: 'https://github.com/christianparanas/chatroom',
-      live: 'https://chatroom-ten.vercel.app'
-    },
-    {
       name: "Covid-19 Tracker",
       disc: "A web application for tracking coronavirus outbreak in the Philippines",
       tools: ["Javascript", "Coronavirus API", "Axios"],
