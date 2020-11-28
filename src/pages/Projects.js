@@ -65,7 +65,7 @@ export default function Projects() {
             <title>Christian Paranas | Projects</title>
       </Helmet>
 
-      <div className="pro">Projects I built</div>
+      <div className="pro">Projects I made</div>
 
       {works.map((work) => (
         <div className="project-container">
